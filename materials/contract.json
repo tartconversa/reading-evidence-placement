@@ -40,10 +40,10 @@
       }
     },
     "forms": {
-      "description": "不同测评的材料与评分范围。",
+      "description": "不同阅读测验的材料与评分范围。",
       "fields": {
-        "id": "测评版本",
-        "on": "测评日期",
+        "id": "阅读测验版本",
+        "on": "阅读测验日期",
         "grade_low": "最低适用年级",
         "grade_high": "最高适用年级"
       },
@@ -53,7 +53,7 @@
       "description": "共同题用anchor标识，max_score随卷变化；不预置转换公式。",
       "fields": {
         "id": "题目编号",
-        "form_id": "所属测评",
+        "form_id": "所属阅读测验",
         "dimension": "knowledge知识、understanding理解、reflection反思",
         "anchor": "共同题联系标识；null为独有题",
         "max_score": "该卷该题最高评分"
@@ -81,8 +81,8 @@
       "description": "教研员的比较声明，属于人工输入而非计算结果。",
       "fields": {
         "id": "批准编号",
-        "left": "左测评",
-        "right": "右测评",
+        "left": "左阅读测验",
+        "right": "右阅读测验",
         "scope": "批准的共同题与年级范围",
         "approved_on": "批准日期",
         "withdrawn_on": "撤回日期；null为未撤回"
