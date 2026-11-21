@@ -1,6 +1,8 @@
 """资料完整性检查，不检验尚未开发的业务能力。"""
 from pathlib import Path
-import json, tempfile, unittest
+import json, sys, tempfile, unittest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from inspect_materials import read_materials
 
 class MaterialsTests(unittest.TestCase):

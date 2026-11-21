@@ -1,5 +1,12 @@
 [project]
 name = "reading-evidence-placement"
-version = "0.0.0"
+version = "0.1.0"
+description = "阅读素养证据的诊断分组与支持接续（校内演练口径，非国家标准）"
 requires-python = ">=3.11,<3.12"
 dependencies = []
+
+[project.scripts]
+reading-app = "reading_app.cli:main"
+
+[tool.setuptools]
+packages = ["reading_app"]
